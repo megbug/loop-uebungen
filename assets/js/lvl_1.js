@@ -45,15 +45,18 @@ do {
 
 function wordPrint() {
     let inputNum = document.getElementById('inputfeld').value;
+    const output = document.querySelector('div');
+    output.innerHTML = "";
 
     let words = ['hallo', 'Auto', 'Waschmaschine', 'Schrank', 'Katze', 'Beispiel', 'Eltern', 'Fenster', 'Geburtstag', 'Himmel', 'schwimmen', 'Zeitung']
 
     words.forEach(elt => {
-        if (inputNum == elt.length) {
-            console.log(elt);
+        if (Number(inputNum) === elt.length) {
+            output.innerHTML += elt + "<br>";
         }
     });
 }
+
 
 
 

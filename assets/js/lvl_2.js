@@ -17,7 +17,7 @@ const imageArray = () => {
         returnArray.push("image_" + i + ".jpeg");
     }
 
-    console.log(returnArray);
+    // console.log(returnArray);
 };
 
 imageArray();
@@ -37,7 +37,7 @@ function loopMe() {
 
     let anzahlOString = anzahlO.toString().replaceAll(",", "");
 
-    document.getElementById('p').innerHTML = "L" + anzahlOString + "p";
+    document.getElementById('p2').innerHTML = "L" + anzahlOString + "p";
 }
 
 // function loopMe2() {
@@ -51,7 +51,7 @@ function loopMe() {
 //     }
 //     res += "p";
 
-//     document.getElementById('p').innerHTML = res
+//     document.getElementById('p2').innerHTML = res
 // }
 
 
